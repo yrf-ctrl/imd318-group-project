@@ -1,0 +1,25 @@
+/* Kita Tolong Kita - main stylesheet */
+:root{--navy:#001f3f;--navy2:#002d5a;--gold:#c8a96e;--bg:#f7f5f1;--ink:#1b2430;--card:#fff;--line:#e2ddd2;font-size:100%}
+body.hc{--bg:#000;--ink:#fff;--card:#000;--line:#fff;--navy:#000;--navy2:#000;--gold:#ffeb3b}
+*{box-sizing:border-box}body{margin:0;font:1rem/1.65 system-ui,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3,.logo{font-family:Georgia,serif;line-height:1.2}h1{font-size:2.2rem}h2{margin-top:2rem}a{color:var(--navy2)}body.hc a{color:var(--gold)}
+.wrap{max-width:1040px;margin:auto;padding:0 20px}.narrow{max-width:760px;padding-top:24px;padding-bottom:40px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:9}
+.top{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5}.bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.logo{color:#fff;text-decoration:none;font-size:1.25rem;margin-right:auto}nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:6px;display:block}nav a:hover{background:var(--navy2)}nav a[aria-current]{border-bottom:2px solid var(--gold)}
+.tools button,.burger{background:transparent;color:#fff;border:1px solid #fff5;border-radius:6px;padding:6px 10px;cursor:pointer}.burger{display:none}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:72px 0}.hero h1{font-size:2.6rem;max-width:18ch}.hero p{max-width:52ch;color:#e8edf3}
+.btn{display:inline-block;background:var(--gold);color:#001f3f;padding:11px 20px;border-radius:6px;border:0;text-decoration:none;font-weight:600;cursor:pointer;font-size:1rem}.btn.ghost{background:transparent;color:#fff;border:1px solid #fff8}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}.card h3{margin-top:0}
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;padding-bottom:40px}.quote{border-left:3px solid var(--gold);padding-left:20px;font-family:Georgia,serif;font-size:1.15rem}
+.ticks{padding-left:0;list-style:none}.ticks li{padding-left:26px;position:relative;margin:8px 0}.ticks li:before{content:"";position:absolute;left:4px;top:.55em;width:10px;height:6px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+.steps li{margin:10px 0}.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line)}.tabs button{background:none;border:0;padding:10px 16px;cursor:pointer;font-size:1rem;color:var(--ink);border-bottom:3px solid transparent}.tabs [aria-selected=true]{border-color:var(--gold);font-weight:600}
+.acc button{width:100%;text-align:left;background:var(--card);border:1px solid var(--line);padding:14px;margin-top:8px;cursor:pointer;font-size:1rem;color:var(--ink);border-radius:6px}.acc div{padding:4px 14px}
+form label{display:block;margin:14px 0;font-weight:600}input,textarea{display:block;width:100%;padding:10px;margin-top:6px;border:1px solid #9aa4b2;border-radius:6px;font:inherit;background:var(--card);color:var(--ink)}
+.err{color:#b00020}body.hc .err{color:#ff8a80}.gb{padding:0;list-style:none}.gb li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:8px 0}
+.modal{position:fixed;inset:0;background:#000a;display:grid;place-items:center;z-index:9}.modal[hidden]{display:none}.box{background:var(--card);color:var(--ink);padding:28px;border-radius:10px;max-width:420px;border-top:4px solid var(--gold)}
+.map{columns:2;padding-left:20px}.map li{margin:6px 0}
+footer{background:var(--navy);color:#dfe6ee;padding:32px 0;margin-top:40px;font-size:.92rem}footer a{color:var(--gold)}.foot{display:grid;grid-template-columns:1.2fr 1fr 1.6fr;gap:24px}.fl a{display:block;margin:4px 0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media(max-width:760px){.burger{display:block}nav{display:none;width:100%;order:5}nav.open{display:block}nav ul{flex-direction:column}.split,.foot{grid-template-columns:1fr}.map{columns:1}.hero h1{font-size:2rem}}
